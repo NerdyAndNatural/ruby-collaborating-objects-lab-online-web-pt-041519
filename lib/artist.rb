@@ -7,7 +7,7 @@ class Artist
     @title = title
   end
 
-  def add_song ()
+  def add_song(song)
     files = []
     Dir.new(self.path).each do |file|
       files << file if file.length > 4
